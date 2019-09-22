@@ -1,0 +1,52 @@
+{
+    "name": "agpretto/articles",
+    "description": "Basic articles management for Laravel application",
+    "keywords": [
+        "articles",
+        "laravel"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/Mindexperiment/articles",
+    "support": {
+        "issues": "https://github.com/Mindexperiment/articles/issues",
+        "source": "https://github.com/Mindexperiment/articles"
+    },
+    "authors": [
+        {
+            "name": "Andrea Giuseppe Pretto",
+            "email": "info@andreagiuseppe.com",
+            "homepage": "https://andreagiuseppe.com"
+        }
+    ],
+    "require": {
+        "illuminate/database": "^6.0",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "^4.0|^5.0",
+        "phpunit/phpunit": "^7.5|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Agpretto\\Articles\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Agpretto\\Articles\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Agpretto\\Articles\\ArticlesServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
