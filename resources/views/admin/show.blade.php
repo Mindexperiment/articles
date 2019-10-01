@@ -9,5 +9,5 @@
         {{ Illuminate\Mail\Markdown::parse($article->body) }}
     </div>
 
-    <p><a href="{{ back() }}">{{ __( 'Return back' ) }}</a></p>
+    <p><a href="{{ route('articles.admin.index') }}">{{ __( 'Return back' ) }}</a></p>
 </section>
