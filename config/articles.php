@@ -21,4 +21,9 @@ return [
      */
     'author' => User::class,
 
+    /*
+     |
+     */
+    'header_label' => 'Articles',
+
 ];
