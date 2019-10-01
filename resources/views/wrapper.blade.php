@@ -2,6 +2,8 @@
 
 @section('body')
 <div>
+    @include('articles::header')
+
     @include($page)
 
 </div>
