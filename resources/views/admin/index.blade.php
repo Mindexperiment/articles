@@ -7,6 +7,7 @@
 
     <div>
         @forelse($articles as $article)
+            @include('articles::admin.summary')
 
         @empty
             <p>{{ __( 'No article' ) }}</p>

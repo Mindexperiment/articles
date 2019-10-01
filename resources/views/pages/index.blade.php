@@ -3,6 +3,7 @@
 
     <div>
         @forelse($articles as $article)
+            @include('articles::pages.summary')
 
         @empty
             <p>{{ __( 'No article' ) }}</p>
