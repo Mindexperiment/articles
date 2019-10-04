@@ -6,6 +6,6 @@
     </header>
 
     <div>
-        {{ Illuminate\Mail\Markdown::parse($article->body) }}
+        {{ $article->parsedBody }}
     </div>
 </article>

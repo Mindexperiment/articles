@@ -5,10 +5,11 @@ namespace Agpretto\Articles;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Agpretto\Articles\Traits\Publishable;
+use Agpretto\Articles\Traits\MarkdownParser;
 
 class Article extends Model
 {
-    use Publishable;
+    use Publishable, MarkdownParser;
 
     /**
      * The table associated with the model.
@@ -51,6 +52,16 @@ class Article extends Model
         static::saving(function ($model) {
             $model->slug = Str::slug($model->title, '-');
         });
+    }
+
+    /**
+     * Get the markdown parsed body
+     * 
+     * @return string
+     */
+    public function getParsedBodyAttribute()
+    {
+        return $this->parse($this->body);
     }
 
     /**
