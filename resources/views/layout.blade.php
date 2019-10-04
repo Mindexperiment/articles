@@ -8,8 +8,8 @@
         <meta name="csrf-token" content="{{ csrf_token() }}" />
 
         <!-- Stylesheets -->
-        if (!config('articles.custom_css'))
-        <link rel="stylesheet" href="{{ asset('vendor/agpretto/articles/resources/css/app.css') }}">
+        @if (!config('articles.custom_css'))
+        <link rel="stylesheet" href="{{ asset('vendor/agpretto/articles/css/app.css') }}">
         @endif
 
         @stack( 'stylesheets' )

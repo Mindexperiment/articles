@@ -97,6 +97,10 @@ class ArticlesServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__.'/../resources/views' => $this->app->resourcePath('views/vendor/articles'),
             ], 'articles-views');
+
+            $this->publishes([
+                __DIR__.'/../resources/css' => $this->app->publicPath('vendor/agpretto/articles/css'),
+            ], 'articles-css');
         }
     }
 }

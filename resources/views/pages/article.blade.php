@@ -5,7 +5,7 @@
         <p><small>{{ $article->author->name }} - {{ $article->updated_at->diffForHumans() }} ({{ $article->created_at->toFormattedDateString() }})</small></p>
     </header>
 
-    <div>
+    <div class="constrain markdown">
         {!! $article->parsedBody !!}
     </div>
 </article>
