@@ -7,10 +7,13 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-        <title></title>
+        <!-- Stylesheets -->
+        @stack( 'stylesheets' )
+
+        <title>{{ config( 'app.name' ) }}{{ isset( $title ) ? " | {$title}" : '' }}</title>
     </head>
     <body>
         @yield('body')
 
     </body>
-<html>
+</html>
