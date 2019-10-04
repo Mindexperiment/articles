@@ -31,4 +31,9 @@ return [
      */
     'header_label' => 'Articles',
 
+    /**
+     * Custom css
+     */
+    'custom_css' => false,
+
 ];

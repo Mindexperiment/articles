@@ -8,6 +8,10 @@
         <meta name="csrf-token" content="{{ csrf_token() }}" />
 
         <!-- Stylesheets -->
+        if (!config('articles.custom_css'))
+        <link rel="stylesheet" href="{{ asset('vendor/agpretto/articles/resources/css/app.css') }}">
+        @endif
+
         @stack( 'stylesheets' )
 
         <title>{{ config( 'app.name' ) }}{{ isset( $title ) ? " | {$title}" : '' }}</title>
