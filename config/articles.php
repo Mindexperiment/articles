@@ -22,6 +22,11 @@ return [
     'author' => User::class,
 
     /*
+     | Custom header view
+     */
+    'header_view' => 'articles::header',
+
+    /*
      |
      */
     'header_label' => 'Articles',

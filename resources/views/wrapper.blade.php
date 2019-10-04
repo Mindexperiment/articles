@@ -2,7 +2,7 @@
 
 @section('body')
 <div>
-    @include('articles::header')
+    @include(config('articles.header_view'))
 
     @include($page)
 
