@@ -1,0 +1,121 @@
+.constrain {
+    max-width: 42em;
+}
+.markdown p {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+}
+.markdown strong {
+    font-weight: 600;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.markdown a {
+    font-style: italic;
+    text-decoration: underline;
+}
+.markdown hr {
+    border-style: dashed;
+    border-top-width: 2px;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+.markdown h1,
+.markdown h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.markdown h3,
+.markdown h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+.markdown h5 {
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+.markdown h6 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.markdown blockquote {
+    border-left-width: 2px;
+    font-style: italic;
+    margin-bottom: 2rem;
+    margin-left: 0;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+.markdown blockquote p {
+    margin: 0;
+}
+.markdown ul, .markdown ol {
+    list-style-position: outside;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+}
+.markdown ul {
+    list-style-type: disc;
+}
+.markdown ol {
+    list-style-type: decimal;
+}
+.markdown li {
+    margin-bottom: 0.5rem;
+}
+.markdown p > code {
+    border-radius: 0.25rem;
+    position: relative;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+}
+.markdown dl {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.markdown dt {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.markdown dd {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.markdown dd p {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+.markdown pre {
+    border-radius: 0.25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    overflow-y: hidden;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+}
+.markdown pre > code {
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    line-height: 1.625;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    -webkit-font-smoothing: antialiased;
+}
