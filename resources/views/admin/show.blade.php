@@ -6,7 +6,7 @@
     </header>
 
     <div>
-        {{ $article->parsedBody }}
+        {!! $article->parsedBody !!}
     </div>
 
     <p><a href="{{ route('articles.admin.index') }}">{{ __( 'Return back' ) }}</a></p>

@@ -6,6 +6,6 @@
     </header>
 
     <div>
-        {{ $article->parsedBody }}
+        {!! $article->parsedBody !!}
     </div>
 </article>
