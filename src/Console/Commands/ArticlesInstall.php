@@ -51,6 +51,9 @@ class ArticlesInstall extends Command
         $this->comment('Publishing Articles migrations...');
         $this->callSilent('vendor:publish', [ '--tag' => 'articles-migrations' ]);
 
+        $this->comment('Publishing Articles css...');
+        $this->callSilent('vendor:publish', [ '--tag' => 'articles-css' ]);
+
         if ($this->option('template')) {
             $this->callSilent('vendor:publish', [ '--tag' => 'articles-views' ]);
         } else {
