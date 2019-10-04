@@ -24,7 +24,7 @@
                 <p>{{ $errors->first('body') }}</p>
             @endif
 
-            <p><small><span></span> <a href="" target="_blank">{{ __( 'Style with Markdown' ) }}</a></small></p>
+            <p><small><span></span> <a href="https://www.markdownguide.org/" target="_blank">{{ __( 'Style with Markdown' ) }}</a></small></p>
         </div>
     </fieldset>
 
