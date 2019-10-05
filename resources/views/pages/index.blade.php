@@ -1,4 +1,4 @@
-<section>
+<section class="px-6">
     <h2>{{ config('articles.header_label') }}</h2>
 
     <div>

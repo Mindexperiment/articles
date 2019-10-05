@@ -1,8 +1,8 @@
-<section>
+<section class="px-6">
     <header>
-        <h2>{{ __( 'Articles' ) }}</h2>
+        <h2 class="font-semibold text-3xl">{{ __( 'Articles' ) }}</h2>
 
-        <a href="{{ route('articles.admin.create') }}">{{ __( 'New article' ) }}</a>
+        <a href="{{ route('articles.admin.create') }}" class="underline">{{ __( 'New article' ) }}</a>
     </header>
 
     <div>

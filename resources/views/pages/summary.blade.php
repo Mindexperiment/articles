@@ -1,7 +1,7 @@
-<div>
+<div class="py-4 mb-6">
     <p>
-        <a href="{{ route('articles.article', $article) }}">{{ $article->title }}</a>
+        <a href="{{ route('articles.article', $article) }}" class="underline">{{ $article->title }}</a>
 
-        <span>{{ $article->updated_at->diffForHumans() }}</span>
+        <small>{{ $article->updated_at->diffForHumans() }}</small>
     </p>
 </div>
