@@ -43,4 +43,13 @@ class ArticleTest extends IntegrationTestCase
 
         $this->assertSame('modify-that-slug', $article->slug);
     }
+
+    public function test_MarkdownBody()
+    {
+        $article = factory(Article::class)->create([
+            'body' => '# title',
+        ]);
+
+        $this->assertSame('<h1>title</h1>', $article->parsedBody);
+    }
 }

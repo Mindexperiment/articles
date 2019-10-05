@@ -99,7 +99,7 @@ class ArticlesServiceProvider extends ServiceProvider
             ], 'articles-views');
 
             $this->publishes([
-                __DIR__.'/../resources/css' => $this->app->publicPath('vendor/agpretto/articles/css'),
+                __DIR__.'/../resources/css' => public_path('vendor/agpretto/articles/css'),
             ], 'articles-css');
         }
     }

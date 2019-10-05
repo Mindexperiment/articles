@@ -14,7 +14,7 @@
 
         @stack( 'stylesheets' )
 
-        <title>{{ config( 'app.name' ) }}{{ isset( $title ) ? " | {$title}" : '' }}</title>
+        <title>{{ config('app.name') }}{{ isset($title) ? " | {$title}" : '' }}</title>
     </head>
     <body>
         @yield('body')
