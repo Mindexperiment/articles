@@ -27,6 +27,7 @@ class PublicControllerTest extends IntegrationTestCase
         $response->assertViewIs('articles::wrapper');
         $response->assertViewHas('page', 'articles::pages.article');
         $response->assertViewHas('article');
+        $response->assertViewHas('title');
         $response->assertSee($article->title);
     }
 }

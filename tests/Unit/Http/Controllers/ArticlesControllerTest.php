@@ -59,5 +59,6 @@ class ArticlesControllerTest extends IntegrationTestCase
         $response->assertViewIs('articles::wrapper');
         $response->assertViewHas('page', 'articles::admin.show');
         $response->assertViewHas('article');
+        $response->assertViewHas('title');
     }
 }

@@ -18,6 +18,7 @@ class PublicController extends Controller
     public function article(Article $article)
     {
         return view('articles::wrapper', [ 'page' => 'articles::pages.article' ])
+            ->with('title', $article->title)
             ->with('article', $article);
     }
 }

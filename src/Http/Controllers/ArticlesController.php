@@ -51,6 +51,7 @@ class ArticlesController extends Controller
     public function show(Article $article)
     {
         return view('articles::wrapper', [ 'page' => 'articles::admin.show' ])
+            ->with('title', $article->title)
             ->with('article', $article);
     }
 }
