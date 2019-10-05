@@ -31,7 +31,7 @@ class ArticlesController extends Controller
 
     public function index()
     {
-        $articles = Article::all();
+        $articles = Article::latest()->get();
 
         return view('articles::wrapper', [ 'page' => 'articles::admin.index' ])
             ->with('articles', $articles);
